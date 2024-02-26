@@ -77,11 +77,17 @@ console.log(question.get("question"));
 for (const [key, value] of question) {
   if (typeof key === "number") console.log(`Answer ${key}: ${value}`);
 }
-const answer = Number(prompt("Your answer"));
+// const answer = Number(prompt("Your answer"));
+const answer = 3;
 console.log(answer);
 
 console.log(question.get(question.get("correct") === answer));
 
+// convert map to arrray
+console.log([...question]);
+console.log([...question.entries()]);
+console.log([...question.keys()]);
+console.log([...question.values()]);
 /*
  // MAP 
 const rest = new Map();
