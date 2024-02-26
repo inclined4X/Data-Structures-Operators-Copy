@@ -67,6 +67,20 @@ console.log(question);
 
 //convert objects to maps
 console.log(Object.entries(openingHours));
+const hoursMap = new Map(Object.entries(openingHours));
+
+console.log(hoursMap);
+
+// quiz app
+console.log(question.get("question"));
+// iteration is possible on maps because maps are also iterables
+for (const [key, value] of question) {
+  if (typeof key === "number") console.log(`Answer ${key}: ${value}`);
+}
+const answer = Number(prompt("Your answer"));
+console.log(answer);
+
+console.log(question.get(question.get("correct") === answer));
 
 /*
  // MAP 
