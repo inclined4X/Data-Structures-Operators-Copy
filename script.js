@@ -53,6 +53,19 @@ const restaurant = {
   },
 };
 
+// WORKING WITH  STRINGSS
+const airline = "TAP Air Portugal";
+const plane = "A320";
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+
+console.log("B737"[0]);
+console.log(airline.length);
+console.log("B737".length);
+//METHODDS WHEN WORKING WITH  STRINGSS
+console.log(airline.indexOf("r"));
+/*
 // MAP ITERATION
 const question = new Map([
   ["question", "what is the best programming language in the world?"],
@@ -88,8 +101,8 @@ console.log([...question]);
 console.log([...question.entries()]);
 console.log([...question.keys()]);
 console.log([...question.values()]);
-/*
- // MAP 
+
+// MAP
 const rest = new Map();
 rest.set("name", "Classico Italiano");
 rest.set(1, "Firenze, Italy");
@@ -122,31 +135,31 @@ console.log(rest.size);
 console.log(rest.get(array));
 
 // SETS
-const ordersSet = new Set(['Pasta', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
+const ordersSet = new Set(["Pasta", "Pizza", "Risotto", "Pasta", "Pizza"]);
 console.log(ordersSet);
 
 console.log(ordersSet.size);
-console.log(ordersSet.has('Pizza'));
-console.log(ordersSet.has('Bread'));
+console.log(ordersSet.has("Pizza"));
+console.log(ordersSet.has("Bread"));
 
-ordersSet.add('Garlic Bread');
-ordersSet.add('Garlic Bread');
-ordersSet.delete('Risotto');
+ordersSet.add("Garlic Bread");
+ordersSet.add("Garlic Bread");
+ordersSet.delete("Risotto");
 // ordersSet.clear();
 console.log(ordersSet);
 
 for (const order of ordersSet) console.log(order);
 
 // Example
-const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
 
 const staffUnique = [...new Set(staff)];
 console.log(staffUnique);
 console.log(
-  new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+  new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
 );
 
-console.log(new Set('Jezemiah').size);
+console.log(new Set("Jezemiah").size);
 
 // looping objects
 // PROPERTY NAMES
@@ -188,23 +201,23 @@ console.log(restaurant.openingHours.mon?.open);
 console.log(restaurant.openingHours?.mon?.open);
 
 // example
-const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
 for (const day of days) {
-  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  const open = restaurant.openingHours[day]?.open ?? "closed";
   console.log(`On ${day}, we open at ${open}`);
 }
 
 //Methods
-console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
-console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist');
+console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
+console.log(restaurant.orderRisotto?.(0, 1) ?? "Method does not exist");
 
 //ARRAYS
-const users = [{ name: 'Jezemiah', email: 'jezemiahsam48@gmail.com' }];
-console.log(users[0]?.name ?? 'User Array Empty');
+const users = [{ name: "Jezemiah", email: "jezemiahsam48@gmail.com" }];
+console.log(users[0]?.name ?? "User Array Empty");
 // without optional chaining we would have written something like
 if (users.length > 0) console.log(users[0].name);
-else console.log('User Array Empty');
+else console.log("User Array Empty");
 
 // THE FOR OF LOOP
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
@@ -228,18 +241,17 @@ console.log(guests);
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
 
-
 // Short circuting
-console.log('--- 0R ---');
+console.log("--- 0R ---");
 // Use Any data type
 // they cab return any data type
 // they can also do short circurting
-console.log(3 || 'Jonas');
-console.log('' || 'Jonas');
+console.log(3 || "Jonas");
+console.log("" || "Jonas");
 console.log(true || 0);
 console.log(undefined || null);
 
-console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+console.log(undefined || 0 || "" || "Hello" || 23 || null);
 
 // real application of short circuting
 restaurant.numGuests = 0;
@@ -249,19 +261,18 @@ console.log(guests1);
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
 
-console.log('--- AND ---');
-console.log(0 && 'Jonas');
-console.log(7 && 'Jonas');
+console.log("--- AND ---");
+console.log(0 && "Jonas");
+console.log(7 && "Jonas");
 
-console.log('Hello' && 23 && null && 'Jonas');
+console.log("Hello" && 23 && null && "Jonas");
 
 // real world application
 if (restaurant.orderPizza) {
-  restaurant.orderPizza('mushrooms', 'spinach');
+  restaurant.orderPizza("mushrooms", "spinach");
 }
 
-restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
- 
+restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach");
 
 // DESTRUCTURING
 // Rest Pattern and Parameters
@@ -300,9 +311,8 @@ add(8, 2, 5, 3, 2, 1, 4);
 const x = [23, 5, 7];
 add(...x);
 
-restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
-restaurant.orderPizza('mushrooms');
-
+restaurant.orderPizza("mushrooms", "onion", "olives", "spinach");
+restaurant.orderPizza("mushrooms");
 
 //Spread operator
 //old way
@@ -315,7 +325,7 @@ console.log(newArr);
 
 console.log(...newArr);
 
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+const newMenu = [...restaurant.mainMenu, "Gnocci"];
 console.log(newMenu);
 
 //copy array
@@ -328,8 +338,8 @@ console.log(menu);
 //literables : arrays , strings , maps ,sets NOT Objects
 
 //string
-const str = 'Jonas';
-const letters = [...str, '', 'S.'];
+const str = "Jonas";
+const letters = [...str, "", "S."];
 console.log(letters);
 console.log(...str);
 // console.log(`${...str} Jez`);
@@ -348,11 +358,11 @@ console.log(...str);
 // restaurant.orderPasta(...ingredients);
 
 //since ES 2018 spread operator works on objects
-const newResturant = { foundedIn: 1998, ...restaurant, founder: 'Guiseppe' };
+const newResturant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
 console.log(newResturant);
 
 const restaurantCopy = { ...restaurant };
-restaurantCopy.name = 'Ristorante Roma';
+restaurantCopy.name = "Ristorante Roma";
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
 
@@ -435,7 +445,7 @@ console.log(i, j, k);
 //default values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
-*/
+
 
 // CODING CHALLENGE ONE
 const game = {
@@ -591,3 +601,4 @@ for (const [minutes, event] of gameEvents) {
   const half = minutes <= 45 ? "FIRST HALF" : "SECOND HALF";
   console.log(`[${half}] ${minutes} : ${event}`);
 }
+*/
