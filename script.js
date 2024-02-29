@@ -435,50 +435,49 @@ console.log(i, j, k);
 //default values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
-
+*/
 
 // CODING CHALLENGE ONE
 const game = {
-  team1: 'Bayern Munich',
-  team2: 'Borrussia Dortmund',
+  team1: "Bayern Munich",
+  team2: "Borrussia Dortmund",
   players: [
     [
-      'Neuer',
-      'Pavard',
-      'Martinez',
-      'Alaba',
-      'Davies',
-      'Kimmich',
-      'Goretzka',
-      'Coman',
-      'Muller',
-      'Gnarby',
-      'Lewandowski',
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
     ],
     [
-      'Burki',
-      'Schulz',
-      'Hummels',
-      'Akanji',
-      'Hakimi',
-      'Weigl',
-      'Witsel',
-      'Hazard',
-      'Brandt',
-      'Sancho',
-      'Gotze',
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
     ],
   ],
-  score: '4:0',
-  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
-  date: 'Nov 9th, 2037',
+  score: "4:0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th, 2037",
   odds: {
     team1: 1.33,
     x: 3.25,
     team2: 6.5,
   },
 };
-
 
 // Task1
 // const players1 = game.players[0];
@@ -496,7 +495,7 @@ const allPlayers = [...players1, ...players2];
 // console.log(allPlayers);
 
 // task 4
-const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
 // console.log(players1Final);
 
 // task 5
@@ -517,8 +516,8 @@ function printGoals(...playerNames) {
 // printGoals(...game.scored);
 
 // task 7
-team1 < team2 && console.log('team 1 is more likely to win');
-team1 > team2 && console.log('team 2 is more likely to win');
+team1 < team2 && console.log("team 1 is more likely to win");
+team1 > team2 && console.log("team 2 is more likely to win");
 
 // #2 challenge with the same object
 // task 1
@@ -542,7 +541,20 @@ console.log(sum);
 console.log(average);
 
 for (const [team, odd] of Object.entries(game.odds)) {
-  const teamStr = team === 'x' ? 'draw' : `Victory ${game[team]}`;
+  const teamStr = team === "x" ? "draw" : `Victory ${game[team]}`;
   console.log(`Odd of ${teamStr} ${odd}`);
 }
-*/
+
+const gameEvents = new Map([
+  [17, "⚽ GOAL"],
+  [36, "🔁 Substitution"],
+  [47, "⚽ GOAL"],
+  [61, "🔁 Substitution"],
+  [64, "🔶 Yellow card"],
+  [69, "🔴 Red card"],
+  [70, "🔁 Substitution"],
+  [72, "🔁 Substitution"],
+  [76, "⚽ GOAL"],
+  [80, "⚽ GOAL"],
+  [92, "🔶 Yellow card"],
+]);
