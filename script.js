@@ -65,6 +65,11 @@ console.log(airline.length);
 console.log("B737".length);
 //METHODDS WHEN WORKING WITH  STRINGSS
 console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.indexOf("portugal"));
+
+//slice
+console.log(airline.slice(4));
 /*
 // MAP ITERATION
 const question = new Map([
