@@ -558,3 +558,7 @@ const gameEvents = new Map([
   [80, "⚽ GOAL"],
   [92, "🔶 Yellow card"],
 ]);
+
+// task 1
+const events = new Set(gameEvents.values());
+console.log(events);
