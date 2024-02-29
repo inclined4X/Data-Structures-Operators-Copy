@@ -568,20 +568,26 @@ console.log(newArrayEventsSet);
 
 //task 2
 gameEvents.delete(64);
-// console.log(gameEvents);
+console.log(gameEvents);
 
 // task 3
 const durationOfGame = 90;
 const numberOfEvents = gameEvents.size;
 const averageTimeBetweenEvents = durationOfGame / numberOfEvents;
 
-// task 4
-// console.log(
-//   `An event happened, on avearage, every ${averageTimeBetweenEvents} minutes`
-// );
+const time = [...gameEvents.keys().pop()];
 
-// task 5
+console.log(
+  `An event happened, on avearage, every ${averageTimeBetweenEvents} minutes`
+);
+
+// to make it more specific for 90 minuutes
+console.log(
+  `An event happened, on avearage, every ${time / gameEvents.size} minutes`
+);
+
+// task 4
 for (const [minutes, event] of gameEvents) {
   const half = minutes <= 45 ? "FIRST HALF" : "SECOND HALF";
-  // console.log(`[${half}] ${minutes} : ${event}`);
+  console.log(`[${half}] ${minutes} : ${event}`);
 }
