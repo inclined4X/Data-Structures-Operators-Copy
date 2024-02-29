@@ -566,3 +566,14 @@ console.log(events);
 //task 2
 gameEvents.delete(64);
 console.log(gameEvents);
+
+// task 3
+const durationOfGame = 90;
+const numberOfEvents = gameEvents.size;
+const averageTimeBetweenEvents = durationOfGame / numberOfEvents;
+
+console.log(
+  `An event happened, on avearage, every ${averageTimeBetweenEvents} minutes`
+);
+// An event happened, on
+// average, every 9 minutes
