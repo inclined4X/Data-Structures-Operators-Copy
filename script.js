@@ -562,10 +562,13 @@ const gameEvents = new Map([
 // task 1
 const events = new Set(gameEvents.values());
 console.log(events);
+// converting to an array
+const newArrayEventsSet = [...events];
+console.log(newArrayEventsSet);
 
 //task 2
 gameEvents.delete(64);
-console.log(gameEvents);
+// console.log(gameEvents);
 
 // task 3
 const durationOfGame = 90;
@@ -573,12 +576,12 @@ const numberOfEvents = gameEvents.size;
 const averageTimeBetweenEvents = durationOfGame / numberOfEvents;
 
 // task 4
-console.log(
-  `An event happened, on avearage, every ${averageTimeBetweenEvents} minutes`
-);
+// console.log(
+//   `An event happened, on avearage, every ${averageTimeBetweenEvents} minutes`
+// );
 
 // task 5
 for (const [minutes, event] of gameEvents) {
   const half = minutes <= 45 ? "FIRST HALF" : "SECOND HALF";
-  console.log(`[${half}] ${minutes} : ${event}`);
+  // console.log(`[${half}] ${minutes} : ${event}`);
 }
