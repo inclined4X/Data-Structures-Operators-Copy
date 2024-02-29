@@ -572,8 +572,13 @@ const durationOfGame = 90;
 const numberOfEvents = gameEvents.size;
 const averageTimeBetweenEvents = durationOfGame / numberOfEvents;
 
+// task 4
 console.log(
   `An event happened, on avearage, every ${averageTimeBetweenEvents} minutes`
 );
-// An event happened, on
-// average, every 9 minutes
+
+// task 5
+for (const [minutes, event] of gameEvents) {
+  const half = minutes <= 45 ? "FIRST HALF" : "SECOND HALF";
+  console.log(`[${half}] ${minutes} : ${event}`);
+}
