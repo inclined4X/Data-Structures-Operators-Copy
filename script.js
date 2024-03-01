@@ -53,6 +53,14 @@ const restaurant = {
   },
 };
 
+const airline = "TAP Air Portugal";
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+console.log("jonas".toUpperCase());
+
+// fix capitalization in name
+
+/*
 // WORKING WITH  STRINGSS
 const airline = "TAP Air Portugal";
 const plane = "A320";
@@ -94,7 +102,7 @@ console.log(new String("jonas"));
 console.log(typeof new String("jonas"));
 
 console.log(typeof new String("jonas").slice(1));
-/*
+
 // MAP ITERATION
 const question = new Map([
   ["question", "what is the best programming language in the world?"],
