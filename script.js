@@ -65,6 +65,18 @@ const passengerCorrect =
   passengerLower[0].toUpperCase() + passengerLower.slice(1);
 console.log(passengerCorrect);
 
+// comparing email
+const email = "hello@jonas.io";
+const loginEmail = "  Hello@Jonas.Io \n";
+
+// const lowerEmail = loginEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// console.log(trimmedEmail);
+
+const normalisedEmail = loginEmail.toLowerCase().trim();
+console.log(normalisedEmail);
+
+console.log(email === normalisedEmail);
 /*
 // WORKING WITH  STRINGSS
 const airline = "TAP Air Portugal";
