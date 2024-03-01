@@ -80,8 +80,13 @@ console.log(email === normalisedEmail);
 
 // replacing
 const priceGB = "288,97£";
-const priceUS = priceGB.replace("£", "$");
+const priceUS = priceGB.replace("£", "$").replace(",", ".");
 console.log(priceUS);
+
+const announcement =
+  "All passengers come to boarding door 23. Boarding door 23!"; // gate not door
+console.log(announcement.replace("door", "gate"));
+console.log(announcement.replaceAll("door", "gate"));
 /*
 // WORKING WITH  STRINGSS
 const airline = "TAP Air Portugal";
