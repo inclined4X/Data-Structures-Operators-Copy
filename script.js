@@ -93,6 +93,11 @@ console.log(announcement.replace("door", "gate"));
 // Using regex
 console.log(announcement.replace(/door/g, "gate"));
 
+// Booleans
+const plane = "A320neo";
+console.log(plane.includes("A320"));
+console.log(plane.includes("Boeing"));
+
 /*
 // WORKING WITH  STRINGSS
 const airline = "TAP Air Portugal";
