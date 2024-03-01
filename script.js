@@ -90,6 +90,10 @@ checkMiddleSeat("11B");
 checkMiddleSeat("23C");
 checkMiddleSeat("3E");
 
+console.log(new String("jonas"));
+console.log(typeof new String("jonas"));
+
+console.log(typeof new String("jonas").slice(1));
 /*
 // MAP ITERATION
 const question = new Map([
