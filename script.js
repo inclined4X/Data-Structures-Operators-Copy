@@ -77,6 +77,11 @@ const normalisedEmail = loginEmail.toLowerCase().trim();
 console.log(normalisedEmail);
 
 console.log(email === normalisedEmail);
+
+// replacing
+const priceGB = "288,97£";
+const priceUS = priceGB.replace("£", "$");
+console.log(priceUS);
 /*
 // WORKING WITH  STRINGSS
 const airline = "TAP Air Portugal";
