@@ -75,6 +75,10 @@ console.log(airline.slice(4, 7));
 console.log(airline.slice(0, airline.indexOf(" ")));
 console.log(airline.slice(airline.lastIndexOf(" ") + 1));
 
+// extract ftom the end
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
 /*
 // MAP ITERATION
 const question = new Map([
