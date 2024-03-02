@@ -107,6 +107,10 @@ planesInLine(5);
 planesInLine(3);
 planesInLine(12);
 
+// codning challenge #4
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
+
 /*
 WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
