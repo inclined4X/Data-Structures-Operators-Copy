@@ -104,9 +104,20 @@ if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
 }
 
 // practice ecercise
-const checkBaggage = function (items) {};
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (
+    baggage.includes("knife") ||
+    baggage.includes("gun") ||
+    baggage.includes("guns")
+  ) {
+    console.log("You are not allowed on board");
+  } else {
+    console.log("Welcome aboard!");
+  }
+};
 
-checkBaggage("I have a laptop, some food and pocket knife");
+checkBaggage("I have a laptop, some Food and pocket Knife");
 checkBaggage("Socks and camera");
 checkBaggage("Got some snacks and a gun for protection");
 
