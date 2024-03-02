@@ -118,7 +118,7 @@ document.querySelector("button").addEventListener("click", function () {
 
   for (const [i, row] of rows.entries()) {
     const [first, second] = row.toLowerCase().trim().split("_");
-    console.log(row, first, second);
+    // console.log(row, first, second);
 
     const outputCheck = `${first}${second.replace(
       second[0],
