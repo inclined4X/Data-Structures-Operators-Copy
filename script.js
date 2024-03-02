@@ -78,6 +78,12 @@ const capitalizeName = function (name) {
 };
 capitalizeName("jessica ann smith davis");
 capitalizeName("jezemiah sam");
+
+// PADDING A STRING(ADDING A NUMBER OF CHARACTERS TO THE STRING TILL THE SRTING HAS A DESIRED LEENGTH)
+const message = "Got to gate 23!";
+console.log(message.padStart(25, "+").padEnd(30, "+"));
+console.log("Jonas".padStart(25, "+"));
+
 /*
 WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
