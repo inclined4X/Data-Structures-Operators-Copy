@@ -111,6 +111,10 @@ planesInLine(12);
 document.body.append(document.createElement("textarea"));
 document.body.append(document.createElement("button"));
 
+document.querySelector("button").addEventListener("click", function () {
+  const text = document.querySelector("textarea").value;
+  console.log(text);
+});
 /*
 WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
