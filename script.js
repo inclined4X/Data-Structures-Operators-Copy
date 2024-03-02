@@ -115,7 +115,17 @@ document.querySelector("button").addEventListener("click", function () {
   const text = document.querySelector("textarea").value;
   const rows = text.split("\n");
   console.log(rows);
+
+  for (const row in rows) {
+    const [first, second] = row.toLowerCase().trim().split("_");
+  }
 });
+
+// underscore_case
+// first_name
+// Some_Variable
+// calculate_AGE
+// delayed_departure
 /*
 WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
