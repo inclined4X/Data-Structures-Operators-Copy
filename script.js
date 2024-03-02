@@ -52,7 +52,33 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+// WORKING WITH STRINGS - PART 3
+// SPLIT AND JOIN
+console.log("a+very+nice+string".split("+"));
+console.log("Jezemiah Sam".split(" "));
 
+const [firstName, lastName] = "Jezemiah Sam".split(" ");
+
+// using join ( opposite of split)
+const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
+console.log(newName);
+
+// CAPITALIZE MULTIPLE NBAMES
+const capitalizeName = function (name) {
+  const names = name.split(" ");
+  console.log(names);
+  const namesUpper = [];
+
+  for (const n of names) {
+    console.log(n);
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(" "));
+};
+capitalizeName("jessica ann smith davis");
+capitalizeName("jezemiah sam");
+/*
+WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
 console.log(airline.toLowerCase());
 console.log(airline.toUpperCase());
@@ -121,8 +147,8 @@ checkBaggage("I have a laptop, some Food and pocket Knife");
 checkBaggage("Socks and camera");
 checkBaggage("Got some snacks and a gun for protection");
 
-/*
-// WORKING WITH  STRINGSS
+
+// WORKING WITH  STRINGSS - Part 1
 const airline = "TAP Air Portugal";
 const plane = "A320";
 console.log(plane[0]);
