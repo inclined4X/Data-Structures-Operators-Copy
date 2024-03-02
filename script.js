@@ -82,8 +82,18 @@ capitalizeName("jezemiah sam");
 // PADDING A STRING(ADDING A NUMBER OF CHARACTERS TO THE STRING TILL THE SRTING HAS A DESIRED LEENGTH)
 const message = "Got to gate 23!";
 console.log(message.padStart(25, "+").padEnd(30, "+"));
-console.log("Jonas".padStart(25, "+"));
+console.log("Jonas".padStart(25, "+").padEnd(20, "+"));
 
+// real world padding application
+const maskCreditCard = function (number) {
+  const str = number + "";
+  const last = str.slice(-4);
+  return last.padStart(str.length, "*");
+};
+
+console.log(maskCreditCard(65445));
+console.log(maskCreditCard(4455554266654448));
+console.log(maskCreditCard("5775464646497974456"));
 /*
 WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
