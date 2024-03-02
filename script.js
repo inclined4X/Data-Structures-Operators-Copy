@@ -103,6 +103,13 @@ if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
   console.log("Part of the NEW AIRbus family");
 }
 
+// practice ecercise
+const checkBaggage = function (items) {};
+
+checkBaggage("I have a laptop, some food and pocket knife");
+checkBaggage("Socks and camera");
+checkBaggage("Got some snacks and a gun for protection");
+
 /*
 // WORKING WITH  STRINGSS
 const airline = "TAP Air Portugal";
