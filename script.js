@@ -94,6 +94,19 @@ const maskCreditCard = function (number) {
 console.log(maskCreditCard(65445));
 console.log(maskCreditCard(4455554266654448));
 console.log(maskCreditCard("5775464646497974456"));
+
+// repeat
+const message2 = "Bad weather... All departured Delayed... ";
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(`There are ${n} planes in the line ${"✈".repeat(n)}`);
+};
+
+planesInLine(5);
+planesInLine(3);
+planesInLine(12);
+
 /*
 WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
