@@ -114,18 +114,25 @@ document.body.append(document.createElement("button"));
 document.querySelector("button").addEventListener("click", function () {
   const text = document.querySelector("textarea").value;
   const rows = text.split("\n");
-  console.log(rows);
+  // console.log(rows);
 
-  for (const row in rows) {
+  for (const row of rows) {
     const [first, second] = row.toLowerCase().trim().split("_");
+    console.log(row, first, second);
+
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase()
+    )}`;
+    console.log(output);
   }
 });
 
 // underscore_case
-// first_name
-// Some_Variable
-// calculate_AGE
-// delayed_departure
+// first_name;
+// Some_Variable;
+// calculate_AGE;
+// delayed_departure;
 /*
 WORKING WITH STRINGS - PART 2
 const airline = "TAP Air Portugal";
